@@ -21,7 +21,7 @@ public class Emojifier {
         // Create the face detector, disable tracking and enable classifications
         FaceDetector detector = new FaceDetector.Builder(context)
                 .setTrackingEnabled(false)
-                .setLandmarkType(FaceDetector.ALL_LANDMARKS)
+                .setClassificationType(FaceDetector.ALL_CLASSIFICATIONS)
                 .build();
 
         // Build the frame
